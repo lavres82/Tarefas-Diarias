@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista de Tarefas</h1>
+    <div class="container">
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Adicionar tarefa...">
+            <select id="dayFilter">
+                <option value="all">Todos os Dias</option>
+                <option value="monday">Segunda-feira</option>
+                <option value="tuesday">Terça-feira</option>
+                <option value="wednesday">Quarta-feira</option>
+                <option value="thursday">Quinta-feira</option>
+                <option value="friday">Sexta-feira</option>
+                <option value="saturday">Sábado</option>
+                <option value="sunday">Domingo</option>
+            </select>
+            <button onclick="addTask()">Adicionar Tarefa</button>
+        </div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <ul class="task-list" id="taskList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
